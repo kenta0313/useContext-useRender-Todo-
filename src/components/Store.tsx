@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IState, IStoreProvider } from "../context/interface";
+import { IState, IStoreProvider } from "../types/interface";
 import { reducer } from "../reducer/reducer";
 
 const initialState: IState = {

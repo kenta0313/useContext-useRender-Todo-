@@ -1,4 +1,4 @@
-import { IState, IActions } from "../context/interface";
+import { IState, IActions } from "../types/interface";
 
 export const reducer = (state: IState, action: IActions): IState => {
   switch (action.type) {

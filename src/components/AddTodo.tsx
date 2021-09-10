@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Store } from "./Store";
-import { IStoreProvider } from "../context/interface";
+import { IStoreProvider } from "../types/interface";
 
 const AddTodo: React.FC = (): JSX.Element => {
   const { state, dispatch }: IStoreProvider = React.useContext(Store);

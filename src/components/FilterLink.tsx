@@ -6,7 +6,7 @@ interface ILinkProps {
   getIsActive: (filter: TFilters) => boolean;
   filter: TFilters;
 }
-const Link: React.FC<ILinkProps> = ({
+const FilterLink: React.FC<ILinkProps> = ({
   children,
   handleClick,
   getIsActive,
@@ -19,4 +19,4 @@ const Link: React.FC<ILinkProps> = ({
   );
 };
 
-export default Link;
+export default FilterLink;

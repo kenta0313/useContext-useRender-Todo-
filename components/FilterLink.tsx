@@ -1,5 +1,5 @@
 import * as React from "react";
-import { TFilters } from "../interface";
+import { TFilters } from "../pages/interface";
 
 interface ILinkProps {
   handleClick: (filter: TFilters) => void;

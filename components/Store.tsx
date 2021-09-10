@@ -1,6 +1,6 @@
 import * as React from "react";
-import { IState, IStoreProvider } from "../interface";
-import { reducer } from "../reducer";
+import { IState, IStoreProvider } from "../pages/interface";
+import { reducer } from "../pages/reducer";
 
 const initialState: IState = {
   todos: [],

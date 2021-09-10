@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render } from "react-dom";
-import App from "../components/App";
-import { StoreProvider } from "../components/Store";
+import App from "../src/components/App";
+import { StoreProvider } from "../src/components/Store";
 
 export default function Index() {
   return(

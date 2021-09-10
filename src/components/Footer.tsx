@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Store } from "./Store";
-import { IStoreProvider, TFilters } from "../pages/interface";
+import { IStoreProvider, TFilters } from "../context/interface";
 import FilterLink from "./FilterLink";
 
 const Footer: React.FC = (): JSX.Element => {

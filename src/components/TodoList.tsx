@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Store } from "./Store";
-import { IStoreProvider, ITodoState, TFilters } from "../pages/interface";
+import { IStoreProvider, ITodoState, TFilters } from "../context/interface";
 import Todo from "./Todo";
 
 const TodoList: React.FC = (): JSX.Element => {

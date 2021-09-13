@@ -29,7 +29,7 @@ const TodoList: React.FC = (): JSX.Element => {
       case "SHOW_ACTIVE":
         return todos.filter((t: ITodoState) => !t.completed);
       default:
-        throw new Error("Unknown filter: " + filter);
+        throw new Error(`Unknown filter: ${filter}`);
     }
   };
 

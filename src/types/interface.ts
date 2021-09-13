@@ -24,10 +24,15 @@ export interface ITodoState {
     type: "SET_VISIBILITY_FILTER";
     payload: { filter: TFilters };
   }
+  interface test {
+    type: "DELETE_TODO";
+    payload: { id: number };
+  }
   export type IActions =
     | IAddTodoAction
     | IToggleTodoAction
-    | ISetVisibilityFilterAction;
+    | ISetVisibilityFilterAction
+    | test;
   
   export interface IStoreProvider {
     state: IState;

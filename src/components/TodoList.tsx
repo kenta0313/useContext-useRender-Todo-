@@ -13,6 +13,13 @@ const TodoList: React.FC = (): JSX.Element => {
     });
   };
 
+  const deleteClick = (id: number) => {
+    dispatch({
+      type: "DELETE_TODO",
+      payload: { id }
+    });
+  }
+
   const getVisibleTodos = (todos: ITodoState[], filter: TFilters) => {
     switch (filter) {
       case "SHOW_ALL":
@@ -30,7 +37,10 @@ const TodoList: React.FC = (): JSX.Element => {
     <ul>
       {getVisibleTodos(state.todos, state.visibilityFilter).map(
         (todo: ITodoState) => (
-          <Todo key={todo.id} {...todo} onClick={() => handleClick(todo.id)} />
+          <div  key={todo.id}>
+          <Todo {...todo} onClick={() => handleClick(todo.id)} />
+          <button onClick={() => deleteClick(todo.id)}>×</button>
+          </div>
         )
       )}
     </ul>

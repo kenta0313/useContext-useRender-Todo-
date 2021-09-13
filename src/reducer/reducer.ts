@@ -24,18 +24,18 @@ export const reducer = (state: IState, action: IActions): IState => {
             : todo
         )
       };
+      case "DELETE_TODO":
+        return {
+          ...state,
+          todos: state.todos.filter(todo =>
+            todo.id !== action.payload.id
+          )
+        };
     case "SET_VISIBILITY_FILTER":
       return {
         ...state,
         visibilityFilter: action.payload.filter
       };
-    case "DELETE_TODO":
-      return {
-        ...state,
-        todos: state.todos.filter(todo =>
-          todo.id !== action.payload.id
-        )
-      }
     default:
       return state;
   }
